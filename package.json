@@ -4,7 +4,7 @@
   "description": "Extra types for TypeScript",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc index.ts",
     "lint": "run-s eslint prettier",
     "lint:fix": "run-s eslint:fix prettier:fix",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",

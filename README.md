@@ -1,5 +1,8 @@
 # etype
 
+[![deno](https://img.shields.io/badge/Deno-1.4.6-brightgreen.svg?logo=deno)](https://deno.land/x/etype)
+[![npm](https://img.shields.io/npm/v/etype)](https://www.npmjs.com/package/etype)
+
 Extra types for TypeScript.
 
 Most of the time we can be sure that the type of a variable is `int`. However, there is no `int` type in TypeScript, so we have to write code with comment like this:
@@ -33,6 +36,14 @@ Import in your ts files:
 
 ```ts
 import type { int } from 'etype';
+
+const age: int;
+```
+
+Support to import in Deno:
+
+```ts
+import type { int } from 'https://deno.land/x/etype/mod.ts';
 
 const age: int;
 ```
