@@ -1,0 +1,44 @@
+// #region Primitive Data Types
+// https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+/**
+ * 32-bit signed two's complement integer, which has a minimum value of -2^31 and a maximum value of 2^31-1
+ * @example 0, 1, 2, -1, -2147483648, 2147483647
+ */
+export type int = number;
+/**
+ * Single-precision 32-bit IEEE 754 floating point
+ * @example 0.1, -1.23
+ */
+export type float = number;
+// #endregion
+
+// #region Mutate Primitive Data Types
+/**
+ * Int-like-string
+ * @example "100", "-1"
+ */
+export type IntString = string;
+/**
+ * Float-like-string
+ * @example "1.00", "-0.1"
+ */
+export type FloatString = string;
+/**
+ * Data-like-string which can be converted to Date object by `new Date(foo)`
+ * @example "Mon, 19 Oct 2020 13:09:21 GMT", "2020-09-10 17:28:35"
+ */
+export type DataString = string;
+/**
+ * JSON-string which can be converted to json object by `JSON.parse(foo)`
+ * @example "{\"hello\":\"world\"}"
+ */
+export type JSONString = string;
+/**
+ * Use int to represent a boolean
+ * @example 0, 1
+ */
+export type BooleanInt = 0 | 1;
+// #region
+
+// #region Usefull Types
+export type AnyFunction = (...args: any[]) => any;

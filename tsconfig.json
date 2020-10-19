@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "ESNext",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES5"
+  }
+}
