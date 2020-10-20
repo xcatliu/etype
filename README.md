@@ -12,7 +12,8 @@ Most of the time we can be sure that the type of a variable is `int`. However, t
 const age: number;
 ```
 
-Is there a better way? Of course! We can define a type alias like this:
+<!-- prettier-ignore -->
+Is there a better way? Of course! We can [define a type alias][Type Aliases] like this:
 
 ```ts
 type int = number;
@@ -66,4 +67,8 @@ Suggestions and pull requests are welcome.
 ## Reference
 
 - [Java Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- [Type Aliases][]
 - [Please provide a `json` basic type](https://github.com/microsoft/TypeScript/issues/1897)
+
+<!-- prettier-ignore -->
+[Type Aliases]: https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases
