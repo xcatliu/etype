@@ -55,3 +55,13 @@ export type AnyObject = Record<string | number | symbol, any>;
  * OmitValueType<A, number> => {a: string; b: boolean;}
  */
 export type OmitValueType<T, V> = Pick<T, { [K in keyof T]: T[K] extends V ? never : K }[keyof T]>;
+
+/**
+ * Select the value type from T to be an attribute of V, and combine these attributes
+ * @example
+ * interface A {a: string; b: boolean; c: number; d: number}
+ * PickValue<A, number> => 'c'|'d'
+ */
+export type PickValue<T, V> = {
+  [K in keyof T]: T[K] extends V ? K : never;
+}[keyof T];
