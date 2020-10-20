@@ -56,7 +56,7 @@ const age: int;
 | `float`       | Single-precision 32-bit IEEE 754 floating point                                                          | `0.1`, `-1.23`                                             | `number`                  |
 | `IntString`   | Int-like-string                                                                                          | `"100"`, `"-1"`                                            | `string`                  |
 | `FloatString` | Float-like-string                                                                                        | `"1.00"`, `"-0.1"`                                         | `string`                  |
-| `DataString`  | Data-like-string which can be converted to Date object by `new Date(foo)`                                | `"Mon, 19 Oct 2020 13:09:21 GMT"`, `"2020-09-10 17:28:35"` | `string`                  |
+| `DateString`  | Date-like-string which can be converted to Date object by `new Date(foo)`                                | `"Mon, 19 Oct 2020 13:09:21 GMT"`, `"2020-09-10 17:28:35"` | `string`                  |
 | `JSONString`  | JSON-string which can be converted to json object by `JSON.parse(foo)`                                   | `"{\"hello\":\"world\"}"`                                  | `string`                  |
 | `BooleanInt`  | Use int to represent a boolean                                                                           | `0`, `1`                                                   | `0 \| 1`                  |
 | `AnyFunction` | Represent to any function                                                                                | /                                                          | `(...args: any[]) => any` |
