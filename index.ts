@@ -42,3 +42,8 @@ export type BooleanInt = 0 | 1;
 
 // #region Usefull Types
 export type AnyFunction = (...args: any[]) => any;
+
+/**
+ * There are only three index types of objects, String, Number, and Symbol
+ */
+export type AnyObject = Record<string | number | symbol, any>;
