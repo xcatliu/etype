@@ -40,7 +40,7 @@ import type { int } from 'etype';
 const age: int;
 ```
 
-Support to import in Deno:
+Import in Deno:
 
 ```ts
 import type { int } from 'https://deno.land/x/etype/mod.ts';
@@ -60,3 +60,8 @@ const age: int;
 | `JSONString`  | JSON-string which can be converted to json object by `JSON.parse(foo)`                                   | `"{\"hello\":\"world\"}"`                                  | `string`                  |
 | `BooleanInt`  | Use int to represent a boolean                                                                           | `0`, `1`                                                   | `0 \| 1`                  |
 | `AnyFunction` | Represent to any function                                                                                | /                                                          | `(...args: any[]) => any` |
+
+## Reference
+
+- [Java Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- [Please provide a `json` basic type](https://github.com/microsoft/TypeScript/issues/1897)
