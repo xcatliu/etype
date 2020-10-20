@@ -47,3 +47,11 @@ export type AnyFunction = (...args: any[]) => any;
  * There are only three index types of objects, String, Number, and Symbol
  */
 export type AnyObject = Record<string | number | symbol, any>;
+
+/**
+ * Removing the value type from T is a property of V
+ * @example
+ * interface A {a: string; b: boolean; c: number; d: number}
+ * OmitValueType<A, number> => {a: string; b: boolean;}
+ */
+export type OmitValueType<T, V> = Pick<T, { [K in keyof T]: T[K] extends V ? never : K }[keyof T]>;
