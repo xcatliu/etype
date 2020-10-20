@@ -1,7 +1,7 @@
 # etype
 
-[![deno](https://img.shields.io/badge/Deno-1.4.6-brightgreen.svg?logo=deno)](https://deno.land/x/etype)
 [![npm](https://img.shields.io/npm/v/etype)](https://www.npmjs.com/package/etype)
+[![deno](https://img.shields.io/badge/Deno-1.4.6-brightgreen.svg?logo=deno)](https://deno.land/x/etype)
 
 Extra types for TypeScript.
 
@@ -60,6 +60,8 @@ const age: int;
 | `JSONString`  | JSON-string which can be converted to json object by `JSON.parse(foo)`                                   | `"{\"hello\":\"world\"}"`                                  | `string`                  |
 | `BooleanInt`  | Use int to represent a boolean                                                                           | `0`, `1`                                                   | `0 \| 1`                  |
 | `AnyFunction` | Represent to any function                                                                                | /                                                          | `(...args: any[]) => any` |
+
+Suggestions and pull requests are welcome.
 
 ## Reference
 
