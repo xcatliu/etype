@@ -19,10 +19,10 @@ export declare type IntString = string;
  */
 export declare type FloatString = string;
 /**
- * Data-like-string which can be converted to Date object by `new Date(foo)`
+ * Date-like-string which can be converted to Date object by `new Date(foo)`
  * @example "Mon, 19 Oct 2020 13:09:21 GMT", "2020-09-10 17:28:35"
  */
-export declare type DataString = string;
+export declare type DateString = string;
 /**
  * JSON-string which can be converted to json object by `JSON.parse(foo)`
  * @example "{\"hello\":\"world\"}"
