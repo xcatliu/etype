@@ -65,3 +65,11 @@ export type OmitValueType<T, V> = Pick<T, { [K in keyof T]: T[K] extends V ? nev
 export type PickValue<T, V> = {
   [K in keyof T]: T[K] extends V ? K : never;
 }[keyof T];
+
+/**
+ * Remove some properties from T
+ * @example
+ * interface A {a: string; b: boolean; c: 'f'|'m';}
+ * PartialKey<A, 'a'|'b'> => {c: 'f'|'m';}
+ */
+export type PartialKey<T, K extends keyof T> = Partial<Pick<T, K>> & Omit<T, K>;
