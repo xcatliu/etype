@@ -62,13 +62,20 @@ const age: int;
 | `BooleanInt`  | Use int to represent a boolean                                                                           | `0`, `1`                                                   | `0 \| 1`                  |
 | `AnyFunction` | Represent to any function                                                                                | /                                                          | `(...args: any[]) => any` |
 
-Suggestions and pull requests are welcome.
+## Contributing
+
+- Search issues before ask a question
+- For feature request, [submit an issue](https://github.com/xcatliu/etype/issues/new) before create pull requests
+- Run `npm run build` to compile `index.ts`
+- [utility-types] should be maintained in there repository
 
 ## Reference
 
 - [Java Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 - [Type Aliases][]
 - [Please provide a `json` basic type](https://github.com/microsoft/TypeScript/issues/1897)
+- [utility-types][]
 
 <!-- prettier-ignore -->
 [Type Aliases]: https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases
+[utility-types]: https://github.com/piotrwitek/utility-types
