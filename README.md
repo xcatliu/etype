@@ -65,9 +65,9 @@ const age: int;
 ## Contributing
 
 - Search issues before ask a question
-- For feature request, [submit an issue](https://github.com/xcatliu/etype/issues/new) before create pull requests
+- For feature request, [submit an issue](https://github.com/xcatliu/etype/issues/new) before create a pull request
 - Run `npm run build` to compile `index.ts`
-- [utility-types] should be maintained in there repository
+- [utility-types] should be maintained in their repository
 
 ## Reference
 
