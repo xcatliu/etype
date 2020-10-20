@@ -19,10 +19,10 @@ export declare type IntString = string;
  */
 export declare type FloatString = string;
 /**
- * Data-like-string which can be converted to Date object by `new Date(foo)`
+ * Date-like-string which can be converted to Date object by `new Date(foo)`
  * @example "Mon, 19 Oct 2020 13:09:21 GMT", "2020-09-10 17:28:35"
  */
-export declare type DataString = string;
+export declare type DateString = string;
 /**
  * JSON-string which can be converted to json object by `JSON.parse(foo)`
  * @example "{\"hello\":\"world\"}"
@@ -34,3 +34,32 @@ export declare type JSONString = string;
  */
 export declare type BooleanInt = 0 | 1;
 export declare type AnyFunction = (...args: any[]) => any;
+/**
+ * There are only three index types of objects, String, Number, and Symbol
+ */
+export declare type AnyObject = Record<string | number | symbol, any>;
+/**
+ * Removing the value type from T is a property of V
+ * @example
+ * interface A {a: string; b: boolean; c: number; d: number}
+ * OmitValueType<A, number> => {a: string; b: boolean;}
+ */
+export declare type OmitValueType<T, V> = Pick<T, {
+    [K in keyof T]: T[K] extends V ? never : K;
+}[keyof T]>;
+/**
+ * Select the value type from T to be an attribute of V, and combine these attributes
+ * @example
+ * interface A {a: string; b: boolean; c: number; d: number}
+ * PickValue<A, number> => 'c'|'d'
+ */
+export declare type PickValue<T, V> = {
+    [K in keyof T]: T[K] extends V ? K : never;
+}[keyof T];
+/**
+ * Remove some properties from T
+ * @example
+ * interface A {a: string; b: boolean; c: 'f'|'m';}
+ * PartialKey<A, 'a'|'b'> => {c: 'f'|'m';}
+ */
+export declare type PartialKey<T, K extends keyof T> = Partial<Pick<T, K>> & Omit<T, K>;
