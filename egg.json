@@ -1,0 +1,10 @@
+{
+    "name": "etype",
+    "description": "Extra types for TypeScript",
+    "homepage": "https://github.com/xcatliu/etype",
+    "files": [
+    "./**/*.ts",
+    "README.md"
+    ],
+    "entry": "./mod.ts"
+}
